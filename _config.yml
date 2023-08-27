@@ -22,15 +22,19 @@ title: Yash Solanki
 email: 252yash@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here's where I'd put some legal stuff if I were important enough!
-baseurl: "yashsol" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "yashnator.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yashnator
 github_username:  yashnator
+timezone: Asia/Kolkata
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+plugins:
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default.
