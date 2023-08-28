@@ -108,10 +108,8 @@ Along with this, pythonizations for making and fitting models directly from the 
 
 With all these changes, we can now can now make models and fit to the data in a completely Pythonic way! I also made a new tutorial to demonstrate this for single channel models.
 
-[Link to Pull Request - Add the number here](https://github.com/root-project/root/pull/12860) 
-
 <details>
-<summary>An example of Pythonic workflow for RooWorkspace</summary>
+<summary>An example of Pythonic workflow using RooWorkspace</summary>
 
 <pre>
 <code data-lang="python">
@@ -223,9 +221,11 @@ ROOT.RooStats.HistFactory.FitModelAndPlot("meas", "tut", "obsData_channel1", ws)
 </details>
 
 
+[Link to Pull Request - #13553](https://github.com/root-project/root/pull/13553) 
+
 # <u>  Future goals - tutorials, multi-channel data, operators and more! </u>
 
-There were a few more milestones mentioned in my propsal that I couldn't deliver because more additions to the `RooFactoryJSONWSTool` were required. Currently, the support for multi-channel datasets and simultaneous p.d.f.s needs to be pythonized. I'll do these in the next few weeks and create another tutorial for this use case.
+There were a few more milestones mentioned in my propsal that I couldn't deliver because more additions to the `RooJSONFactoryWSTool` were required. Currently, the support for multi-channel datasets and simultaneous p.d.f.s needs to be pythonized. I'll do these in the next few weeks and create another tutorial for this use case.
 
 Other than that, we also want to support operators for the objects of RooWorkspace. For example, to add p.d.f.s we could use '+', and for convolution we could use '**'. 
 
